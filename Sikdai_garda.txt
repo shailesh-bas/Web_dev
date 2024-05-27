@@ -1,0 +1,156 @@
+Thought process -
+Will use w3schools to follow on its HTML course,
+and will use ChatGPT to create and learn more upon personalised problems if encountered or needed
+
+LABS
+    lab 1 
+        Day 1 - Intro to HTML and elements 
+
+Day - 1
+goal-to get introduced to html and its elements
+
+World Wide Web created by Tim Berners-Lee in 1989 while at CERN
+
+HTML - hyper text markup language 
+    A markup language is a text-encoding system which specifies the structure and formatting of a document and potentially the relationship between its parts.
+    Interestingly markdown language is also a markup language
+    John Gruber daju thought markup tah markup tara is downright simplified, so lets call it markdown .
+
+    so markup - syntatically formatting,structure,realtion establish garne
+    markdown - same same but more streamlined
+    Example - <b> BOLD ITEM <b>    ||    #Bold Item 
+
+    What is XML then ? XML vs HTML 
+    HTML - Hyper Text Markup Language (1993 - Tim Berners-lee)
+        Hypertext (link between web pages) &&  Markup (format|define|doc manipulation)  
+        Presentation Language
+    XML - Extensible Markup Language (1996)
+        Store and transport data
+        Data describing custom tags
+    Major diff being - html is a markup language && XML provides a framework to define markup languages
+
+HTML elements are basically labels 
+    yo chai paragraph ho hai
+    yo chai header...
+
+Understanding a simple boilerplate
+    --- 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+    ---
+
+    <!Doctype html>
+        declares the doc type and version of html
+        tells the browser that doc is html5
+    <html lang="en">
+        useful for accessibility and search engine
+        specifies the language of doc's content
+    <head>
+        Contains meta-information about the document.
+        where you include metadata (data about data), 
+        links to stylesheets, scripts, and 
+        other resources that are not directly visible on the page.
+
+        <meta charset="UTF-8">
+            UTF - Unicode Transformation Format
+            8 bit code units - each char can be of multiple of 8 bits
+            UTF-8 - character encoding that covers almost all characters and symbols in the world. 
+            ensures that the text content is displayed correctly.
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            controls the layout on mobile browsers
+            viewport - essential for responsive web design
+            width = device-width sets the width of page to follow the screen width
+
+        title - sets title which seen on title bar or tab
+        body
+            contains the content of html doc
+            text,images,links
+
+HTML Element
+    <tagname> Content </tagname>
+    The HTML element is everything from the start tag to the end tag (interesting | I thought tag matrai ho :(   )
+    some elements have no content - <br>
+        called empty elements
+        they have no end tag
+    
+Browsers determine how to display the document based on the tags | based on content inside <body>
+
+Html docs have extension .html or html ,and can be written on any text editors
+
+
+
+<!doctype>  - only once at top of page - not case sensitive
+    The <!DOCTYPE> declaration for HTML5 is: <!DOCTYPE html>
+    HTML 3.2 was an earlier version of HTML  - <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<h1> to <h6>
+    header tags
+    size | priority - h1 > h2 > h3 .....
+    <h1>This is heading 1</h1>
+<p> 
+    Paragraph
+    <p>This is a paragraph.</p>
+<a>
+    links
+    link destination specified by 'href' attribute
+    <a href="www.google.com">This is a link</a>
+<img>
+    image
+    <img src="google.jpeg" alt="google ho yo" width="104" height="142">
+    'src' - source file
+    'alt' - alternative text (accessibility)
+    'width' && 'height' - size
+
+
+Html elements can be nested
+    elements can contain other elements
+    <body>
+        <br>
+    </body>
+
+HTML is not strict as XML so forgetting an end tag is not the end of the world
+    but expected behaviour might not be achieved
+HTML is also not case sensitive
+    <P> === <p>
+    but good practice is lower re .... also html is not a programming language if you already haven't got it yet.
+
+
+Lets wrap up for today, we'll continue with attributes tomorrow
+
+Summarising day 1 && ending with a problem. - GPT dhanna banexa hamro paloma :)
+    HTML Basics: Introduction to HTML and its role in web development.
+    Markup Language: Differences between HTML, Markdown, and XML.
+    HTML Boilerplate: Understanding the basic structure and components.
+    HTML Elements: Tags like <h1> to <h6>, <p>, <a>, <img>.
+    Document Type Declarations: <!DOCTYPE> for HTML5, HTML 4.01, and HTML 3.2.
+    Element Structure: Start and end tags, content, and empty elements.
+    HTML Syntax: Case-insensitivity, file extensions, and nesting elements.
+
+I am using VScode to document and edit my leanring and html doc editing 
+Liveserver extension is used for seamless auto update while simultaneously editing the html docs
+
+Problem 
+    Simple html document
+    no auto boilerplate - memory bata lekhne
+    title - 'mero pailo html'
+    use learnt elemets appropriately 
+---path---      webtechnology-shailesh-bas\Lab1\HTMLS\Day1.html
+Interestingly
+    if html tag ma sab kura enclose nagare simple text bhanera mando raixa browserle
+    <! –– and the comment closes with ––>  (to comment)
+    <a href="#"><h1>class ma chai napadhi k garxa kto</h1></a>
+        so i had used h1 to enclose the text inside 'a' tag  - valid but not recommended 
+        <h1><a href="#">class ma chai napadhi k garxa kto</a></h1>
+            is a better approach but as h1 also sets it to highest priority maybe not the right decision :(
+
+
